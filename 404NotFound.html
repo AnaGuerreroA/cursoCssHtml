@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style/style404.css">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        
+        margin: 0;
+        font-family: 'Muli', sans-serif ;
+    }
+    .header{
+        background: #48BFE3;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__img{
+        width: 200px;
+        margin-top: 10px;
+
+    }
+    .header__menu{
+        margin-right: 30px;
+    }
+    .header__menu:hover ul, ul:hover{
+        display: block;
+    }
+    .header__menu ul{
+        display:none;
+        list-style: none;
+        padding: 0px;
+        position: absolute;
+        width: 150px;
+        text-align: right;
+        margin: 0px 0px 0px -62px;
+    }
+    .header__menu li{
+        margin: 10px 0px;
+    }
+    .header__menu li a{
+       color: white;
+       text-decoration: none;
+    }
+    .header__menu li a:hover{
+        text-decoration: underline;
+    }
+    .header__menu--profile{
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+        color: white;
+    }
+    .header__menu--profile img{
+        margin-top: 10px;
+        margin-right: 8px;
+        display: flex;
+        height: 40px;
+    }
+    .header__menu--profile img{
+        margin: 0px;
+    }
+    .main{
+        height: 300px;
+    }
+    .main__tittle{
+        color:white;
+        font-size: 25px;
+        text-align: center;
+    }
+    .input{
+        border:2px solid white;
+        border-radius: 25px;
+        color:white;
+        font-family: 'Muli', sans-serif ;
+        font-size: 16px;
+        height: 50px;
+        padding: 0px 20px;
+        width: 70%;
+        background-color:rgba(255,255,255,0.1);/*opacidad*/
+        outline: none;
+        margin:0px 15%;
+    }
+    ::placeholder{
+        color:white;
+    }
+
+    
+</style>
+<body>
+    <header class="header">
+        <img class="header__img" src="logo-platzi-video-BW2.png">
+       
+    </header>
+
+    <div id="app">
+        <div id="wrapper">
+            <!-- Make sure data-text equals the text you put inside the tags. -->
+            <h1 class="glitch" data-text="404">404</h1>
+            <span class="glitch" data-text="Página no encontrada">Página no encontrada</span>
+        </div>
+    </div>
+
+</body>
+</html>
